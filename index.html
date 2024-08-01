@@ -1,24 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samia S.</title>
+    <title>Samia Sajid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+
   </head>
   <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Samia S.</h1>
+      <p>Developer & Designer</p>
+      <a href="#contact" class="button">Contact Me</a>
+    </div>
+  </header>
 
+  <section id="about" class="about">
+    <h2>hi there! I’m Samia :)</h2>
+    <p>your fellow run-in-the-mill dreamer</p>
+    <p>I’m a second year  student at The University of British Columbia, Vancouver, BC, Canada.</p>
+    <p>I’m all about colors, patterns, shapes, and designs. I always bring a creative twist into everything I do. I enjoy getting creative with my ideas and then bringing them to life through code.</p>
+  </section>
 
-  <div class="gradient-bg">
+  <!-- Projects Section -->
+  <section id="projects" class="projects" >
+    <h1>Projects</h1>
+    <div class="projects">
+      <a href="https://eml.ubc.ca/projects/procedural-poetry-playhouse/" target="_blank" class="project">
+        <img src="project1.jpg" alt="Poetry Funhouse">
+        <p>Poetry Funhouse<br>2024</p>
+      </a>
+      <a href="https://github.com/Lmh-java/multi-linguistic-chat-app-final" target="_blank" class="project">
+        <img src="project2.jpg" alt="Galaxy Gather">
+        <p>Galaxy Gather<br>2023</p>
+      </a>
+      <a href="https://github.com/anu-raj-16/Chess-game" target="_blank" class="project">
+        <img src="project3.jpg" alt="Chess">
+        <p>Chess<br>2024</p>
+      </a>
+      <a href="https://www.figma.com/proto/HKVlycN9yZWEdKoMPO215r/COEATS?type=design&node-id=818190-114&t=FUkgyv0OjH9G7mOu-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=818190%3A114" target="_blank" class="project">
+        <img src="project4.jpg" alt="Coeats">
+        <p>Coeats<br>2024</p>
+      </a>
+      <a href="https://samiadesigns.carrd.co" target="_blank" class="project">
+        <img src="project5.jpg" alt="Design Portfolio">
+        <p>Design Portfolio<br>2021</p>
+      </a>
+    </div>
+  </section>
+
+  <section id= "contact" class="contact">
+    <h1>Want to Collaborate?</h1>
+    <p>If you're interested in collaboration or just want to chat about all things tech and design, feel free to reach out. I'm always open to new opportunities and conversations!</p>
+    <div class="contact-icons">
+      <a href="mailto:email@example.com"><img src="email-icon.png" alt="Email"></a>
+      <a href="https://www.linkedin.com/in/username" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/username" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+    <div class="footer">
+      <p>Samia S.</p>
+      <p>Developer & Designer</p>
+    </div>
+  </section>
+
+  <div class="animated-gradient-bg">
+    <div class="gradient-bg">
       <svg xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-          <feColorMatrix in="blur"  values ="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-          <feBlend in="SourceGraphic" in2="goo" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
           </filter>
         </defs>
       </svg>
-
       <div class="gradients-container">
         <div class="g1"></div>
         <div class="g2"></div>
@@ -26,9 +91,10 @@
         <div class="g4"></div>
         <div class="g5"></div>
         <div class="interactive"></div>
-
       </div>
+    </div>
   </div>
+
   <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

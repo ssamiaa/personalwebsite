@@ -180,7 +180,7 @@ section {
 }
 
 
-
+/*
 .project-container{
   background-color: rgb(46, 7, 85);
   max-width: 800px;
@@ -218,7 +218,94 @@ section {
   color: white;
   overflow-x: auto;
 }
+*/
+.project-container {
+  background-color: rgb(46, 7, 85);
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 30px;
+  padding: 20px;
+  color: #e0d7ff;
+}
 
+.project-container h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.project-container p {
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.item {
+  border-radius: 20px;
+  width: 150px;
+  height: 200px;
+  color: rgb(46, 7, 85);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(46, 7, 85, 0.8);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.item:hover .project-content {
+  opacity: 1;
+}
+
+.project-content h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.skills {
+  margin: 0;
+  font-size: 0.4em;
+}
 
 
 

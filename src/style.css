@@ -308,6 +308,19 @@ section {
 }
 
 
+.animated-heading {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 1s ease-out, transform 2s ease-out;
+}
+
+
+.animated-heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 :root {
   --color-bg1: rgb(108, 0, 162);

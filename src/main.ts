@@ -26,7 +26,25 @@ document.addEventListener('DOMContentLoaded', () : void => {
 
     move();
 
-    
+    const headings = document.querySelectorAll<HTMLElement>('.animated-heading');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    headings.forEach(heading => {
+        observer.observe(heading);
+    });
 
 });
 

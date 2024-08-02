@@ -54,13 +54,17 @@ nav ul li a:hover {
   margin: 250px 0;
 }
 .hero h1 {
-  font-size: 3em;
+  font-size: 4em;
   color: #e0d7ff; /* Light purple for the main heading */
+  padding-bottom: 0;
+  margin: 0;
 }
 
 .hero p {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #e0d7ff; /* Light purple for the subheading */
+  padding-top: 0;
+  margin: 0;
 }
 
 .button {
@@ -86,16 +90,25 @@ section {
 }
 
 .about{
+  background-color: rgb(46, 7, 85);
   max-width: 800px;
+  height: fit-content;
   margin: 20px auto;
+  border-radius: 20px;
+  padding: 15px;
+  
+  
 }
 
 .about p{
   color: #e0d7ff;
+  margin: 0;
 }
 
-.about h2{
+.about h1{
   color: #e0d7ff;
+  font-size: 3rem;
+
 }
 
 .projects{
@@ -107,22 +120,107 @@ section {
   color: #e0d7ff;
 }
 
-.projects h1{
+.project-container h1{
   color: #e0d7ff;
+  font-size: 1em;
 }
 
 .contact{
   max-width: 800px;
   margin: 20px auto;
+  background-color: rgb(46, 7, 85);
+  max-width: 800px;
+  height: fit-content;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .contact p{
   color: #e0d7ff;
+  padding: 0;
+  margin-top: 0;
 }
 
 .contact h1{
   color: #e0d7ff;
+  font-size: 2em;
+  padding: 0;
+  margin-bottom: 0;
 }
+
+.contact footer{
+  margin-top: auto; /* Pushes the footer to the bottom */
+  padding: 10px 0;
+  font-size: 18px; /* Adjust the font size */
+  color: #fff; /* White text color */
+}
+.contact-icons i {
+  font-size: 40px; /* Adjust the size of the icons */
+  margin: 0 10px;
+  color: #ffffff; /* White icon color */
+  transition: color 0.3s;
+}
+
+.contact-icons i:hover {
+  color: #d4b9ff; /* Light purple on hover */
+}
+
+
+.footer p{
+  margin: 0;
+}
+
+.footer h1{
+  margin: 0;
+}
+
+
+
+.project-container{
+  background-color: rgb(46, 7, 85);
+  max-width: 800px;
+  height: fit-content;
+  margin: 20px auto;
+  border-radius: 30px;
+  padding: 20px;
+  color: #e0d7ff;
+  overflow-x: auto; 
+}
+
+.project-container h1 {
+  font-size: 2em;
+}
+
+.project{
+  display:flex;
+  overflow-x: auto;
+}
+
+
+.item{
+  background-color: #e0d7ff;
+  object-fit: cover;
+  border-radius: 20px;
+  width: 150px;
+  height: 200px;
+  margin-right: 20px;
+  color: rgb(46, 7, 85);;
+}
+
+.project-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow-x: auto;
+}
+
+
+
 
 :root {
   --color-bg1: rgb(108, 0, 162);

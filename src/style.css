@@ -180,45 +180,6 @@ section {
 }
 
 
-/*
-.project-container{
-  background-color: rgb(46, 7, 85);
-  max-width: 800px;
-  height: fit-content;
-  margin: 20px auto;
-  border-radius: 30px;
-  padding: 20px;
-  color: #e0d7ff;
-  overflow-x: auto; 
-}
-
-.project-container h1 {
-  font-size: 2em;
-}
-
-.project{
-  display:flex;
-  overflow-x: auto;
-}
-
-
-.item{
-  background-color: #e0d7ff;
-  object-fit: cover;
-  border-radius: 20px;
-  width: 150px;
-  height: 200px;
-  margin-right: 20px;
-  color: rgb(46, 7, 85);;
-}
-
-.project-content {
-  position: relative;
-  text-align: center;
-  color: white;
-  overflow-x: auto;
-}
-*/
 .project-container {
   background-color: rgb(46, 7, 85);
   max-width: 800px;

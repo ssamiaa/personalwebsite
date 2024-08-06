@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
-  base: '/personalwebsite/',
+  base: './',
   build: {
     outDir: 'dist',
   },
